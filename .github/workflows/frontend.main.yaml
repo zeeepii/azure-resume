@@ -24,6 +24,7 @@ jobs:
       with:
         azcliversion: 2.30.0
         inlineScript: |
+            az account set --subscription 3a4a0573-9d70-4d56-bd4b-d0c6ab05d4e6
             az storage blob upload-batch --account-name getstoragecount -d '$web' -s frontend/
     - name: Purge CDN endpoint
       uses: azure/CLI@v1
