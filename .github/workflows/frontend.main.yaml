@@ -33,7 +33,7 @@ jobs:
       with:
         azcliversion: 2.30.0
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "zied-azure-resume" --name "zied-azure-resume" --resource-group "azureresume-rg"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "zied-azure-resume" --name "zied-azure-resume" --resource-group "asureresume-rg"
 
   # Azure logout 
     - name: logout
